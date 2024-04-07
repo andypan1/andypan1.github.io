@@ -41,8 +41,15 @@ img{
 
 /* Projects */
 .projects{
-    padding: 300px;
+    padding: 300px 0 10px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-white{
+    background: white;
+    color: black;
 }
 
 .projects .title{
@@ -52,7 +59,18 @@ img{
     text-align: center;
 }
 
-/* Utility */
+.project-grid {
+    margin: 20px 0 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.projects a:hover{
+    color: #4891ff;
+}
+
+/* navbar */
 .navbar .container{
     display: flex;
     flex-direction: column;
@@ -80,6 +98,7 @@ img{
     margin-left: -600px;
 }
 
+/* ??? */
 .container{
     max-width: 1100px;
     margin: 0 auto;
@@ -110,9 +129,10 @@ img{
 }
 
 /* individual projects */
-.twoeightbank{
+.card{
     background-color: #fff;
     color: #000;
     border-radius: 10px;
     padding: 20px;
 }
+
