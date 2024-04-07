@@ -27,9 +27,11 @@ ul{
 img{
     max-width: 100%;
 }
-
+/* Hero */
+.hero{
+    margin-top: -550px;
+}
 /* Utility */
-
 .navbar .container{
     display: flex;
     flex-direction: column;
@@ -60,3 +62,22 @@ img{
 }
 
 /* Text */
+.intro-title-xxl{
+    font-size: 3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin: 40px 0 20px;
+}
+
+.intro-text{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+    margin: 20px 0 30px;
+}
+
+.fun-facts-text{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 300;
+}
