@@ -30,7 +30,7 @@ img{
 
 /* Hero */
 .hero{
-    margin-top: -525px;
+    margin-top: -555px;
 }
 .hero .content{
     background-color: #fff;
@@ -52,8 +52,14 @@ img{
     font-size: 2rem;
     line-height: 1.2;
     font-weight: 600;
-    text-align: center;
     color: white;
+    text-align: center;
+}
+
+.projects .content {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .project-grid {
@@ -138,10 +144,7 @@ img{
     background-color: black;
     width: 1200px;
     padding-top: 45px;
-    height: 400px;
+    height: 600px;
     border-radius: 25px;
-    justify-content: space-evenly;
-  justify-items: center;
-  align-content: space-evenly;
-  align-items: center;
+    place-self: center;
 }
