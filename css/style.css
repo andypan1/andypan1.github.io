@@ -45,7 +45,6 @@ img{
     margin: auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
 .projects .title{
@@ -56,10 +55,16 @@ img{
     text-align: center;
 }
 
+.projects .title p{
+    color: white;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 10;
+
+}
 .projects .content {
     display: flex;
     justify-content: center; 
-    align-items: center; 
 }
 
 .project-grid {
@@ -68,11 +73,50 @@ img{
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
     width: 1000px;
+    align-items: start; 
 }
 
+.project-grid a{
+    font-weight: 300;
+    font-size: 1.25rem;
+}
 .projects a:hover{
     color: #4891ff;
+    transition: 0.5s;
 }
+
+
+/* Skills */
+.skills{
+    padding: 100px 0 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills .title{
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+}
+
+.skills .content{
+    display: flex;
+    justify-content: center; 
+}
+
+.skills-grid {
+    margin: 20px 0 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 300px;
+    align-items: start; 
+    text-align: center;
+}
+
 
 /* navbar */
 .navbar .container{
@@ -90,7 +134,7 @@ img{
     padding: 10px 20px;
     font-weight: 600;
     font-size: 25px;
-    transition: 0.5s;
+    transition: 0.25s;
 }
 
 .navbar ul li a:hover{
@@ -142,9 +186,18 @@ img{
 
 #project{
     background-color: black;
-    width: 1200px;
+    width: 1150px;
     padding-top: 45px;
-    height: 600px;
+    height: 750px;
+    border-radius: 25px;
+    place-self: center;
+}
+
+#skill{
+    background-color: #A8A8A8;
+    width: 1150px;
+    padding-top: 45px;
+    height: 325px;
     border-radius: 25px;
     place-self: center;
 }
