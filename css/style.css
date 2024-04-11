@@ -53,6 +53,7 @@ img{
 /* Projects */
 .projects{
     padding: 120px 0 10px;
+    padding-bottom: 130px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -103,6 +104,10 @@ img{
     justify-content: center;
     margin: auto;
     display: flex;
+    padding-top: 45px;
+    background-color: #B0B0B0;
+    width: 1150px;
+    border-radius: 25px;
 }
 
 .skills .title{
@@ -114,53 +119,63 @@ img{
     margin-bottom: 15px;
 }
 
-.skills .skills-content .group {
-    padding-bottom: 140px;
+.skills .group {
+    padding-bottom: 10px;
 }
 
-.skills .skills-content .group .skills-header{
+.group .skills-header{
     padding: 20px 0;
     margin-bottom: 20px;
     position: relative;
-    left: 80px;
     background-color: white;
     width: 1000px;
     border-radius: 20px;
+    cursor: pointer;
 }
-.skills .skills-content .group h4{
+.group .skills-header::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.group h4{
     font-weight: 600;
     font-size: large;
 }
-.skills .skills-content .group .text{
+.group .text{
     padding-left: 20px;
 }
 
-.skills .skills-content .group i {
-    position: absolute;
-    right: 60px;
-    top: 10px;
-    font-size: 50px;
-    cursor: pointer;
+.group  .group-body{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: 0px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
-.skills .skills-content .group-body{
-    display: none; 
+.active.group .group-body{
+    height: 180px;
+    padding-bottom: 110px;
 }
 
-.skills .skills-content .group-body.open{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.skills .group.active .skills-header::before{
+    content: '-';
 }
 
-.skills .skills-content .group-body .grids{
+.group .group-body .grids{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     width: 500px; 
     text-align: center;
-    justify-content: center; 
-    align-items: center;
 }
 
 /* navbar */
@@ -253,12 +268,10 @@ img{
     place-self: center;
 }
 
-#skill{
-    background-color: #B0B0B0;
+/* #skill{
     width: 1150px;
     padding-top: 25px;
-    height: 500px;
+    height: 600px;
     border-radius: 25px;
     place-self: center;
-    cursor: pointer;
-}
+} */
