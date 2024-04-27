@@ -105,7 +105,7 @@ img{
     margin: auto;
     display: flex;
     padding-top: 45px;
-    background-color: #B0B0B0;
+    background-color: #BEBEBE;
     width: 1150px;
     border-radius: 25px;
 }
@@ -178,6 +178,104 @@ img{
     text-align: center;
 }
 
+
+/* Education */
+.education{
+    padding: 155px 0 10px;
+    justify-content: center;
+    margin: 130px auto 0;
+    display: flex;
+    padding-top: 45px;
+    background-color: #B9D9EB;
+    width: 1150px;
+    border-radius: 25px;
+}
+
+.education h4{
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.education .umich {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.education .umich img{
+    margin-right: 20px; /* Add margin between the image and the text */
+    max-width: 125px; /* Set max-width for the image */
+}
+
+.education .umich .title {
+    margin-top: 0; /* Remove default margin */
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.umich h5{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.acc{
+    max-width: 1000px;
+}
+.education h6{
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
+.acc .contentbx{
+    position: relative;
+    margin: 10px 20px;
+}
+
+.acc .contentbx .label {
+    position: relative;
+    padding: 10px;
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-weight: 800;
+    height: 60px;
+}
+
+.acc .contentbx .label::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+
+.acc .contentbx.active .label::before {
+    content: '-';
+}
+.acc .contentbx .content {
+    position: relative;
+    background: #D8D8D8;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+
+.acc .contentbx.active .content{
+    height: 150px;
+    padding: 10px;
+}
+
 /* navbar */
 .navbar .container{
     display: flex;
@@ -212,6 +310,7 @@ img{
     max-width: 1100px;
     margin: 0 auto;
 }
+
 
 /* Text */
 .intro-title-xxl{
