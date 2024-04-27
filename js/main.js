@@ -14,3 +14,15 @@ for(i = 0; i < acc.length; i++){
         this.classList.toggle("active")
     });
 };
+//travel
+const travel = document.querySelector('.carousel')
+const arrowbts = document.querySelectorAll(".wrapper i");
+const firstCardwidth = travel.querySelector(".tcard").offsetWidth;
+
+
+arrowbts.forEach(btn => {
+    btn.addEventListener("click", () => {
+        travel.scrollLeft += btn.id === "left" ? -firstCardwidth : firstCardwidth;
+    });
+});
+

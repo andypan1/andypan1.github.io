@@ -288,6 +288,7 @@ img{
     background-color: #8FBC8B;
     width: 1150px;
     border-radius: 25px;
+    padding-bottom: 50px;
 }
 
 .travel .title {
@@ -303,7 +304,7 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 900px;
+    max-width: 1000px;
     width: 100%;
     padding: 0 60px;
     position: relative;
@@ -318,22 +319,29 @@ img{
     border-radius: 50%;
     cursor: pointer;
     position: absolute;
+    top: 50%;
+    font-size: 1.25rem;
+    transform: translateY(-50%);
+    box-shadow: 0 3px  6px rgba(0,0,0,0.23);
 }
 
 .wrapper i:first-child{
-    left: -60px;
+    left: -50px;
 }
 
 .wrapper i:last-child{
-    right: -60px;
+    right: -50px;
 }
 
 .wrapper .carousel{
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc((100%  / 3) - 10px);
-    gap: 200px;
+    gap: 150px;
     overflow: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
 }
 
 .carousel :where(.card, img){
@@ -342,9 +350,14 @@ img{
     justify-content: center;
 }
 
+.carousel .no-transition {
+    scroll-behavior: auto;
+}
+
 .carousel .tcard{
     height: 500px;
     width: 400px;
+    padding-top: 20px;
     list-style: none;
     background: white;
     border-radius: 10px;
@@ -360,10 +373,23 @@ img{
 }
 
 .tcard h6 {
-    margin: 30px 0 5px;
-    font-weight: 500;
+    margin: 10px 0 5px;
+    font-weight: 600;
     font-size: 1.25rem;
 }
+
+@media screen and (max-width: 900px){
+    .wrapper .carousel{
+        grid-auto-columns: calc((100%  / 2) - 7px);
+    }
+}
+
+@media screen and (max-width: 600px){
+    .wrapper .carousel{
+        grid-auto-columns: 100%
+    }
+}
+
 
 
 /* navbar */
