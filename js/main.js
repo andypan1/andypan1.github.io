@@ -26,3 +26,18 @@ arrowbts.forEach(btn => {
     });
 });
 
+//navbar
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const offset = 60; // Adjust this value as needed
+
+        const target = document.querySelector(this.getAttribute('href'));
+        const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+            top: targetTop - offset,
+            behavior: 'smooth'
+        });
+    });
+});

@@ -18,21 +18,32 @@
     </style>
 </head>
 <body>
+
+    <div class="social-buttons">
+        <a href="https://www.instagram.com/1xndy/" class="instagram"> <img src="images/insta.jpg" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/in/andy-pan-/" class="linkedin"><img src="images/link.png" alt="LinkedIn"></a>
+        <a href="https://github.com/andypan1" class="github"><img src="images/github.png" alt="GitHub"></a>
+        <a href="https://drive.google.com/file/d/1V7CF3UPKIxasn8h5LfUyQm_SiwxCKdX4/view?usp=drive_link" class="drive"><img src="images/resume.png" alt="Resume"></a>
+    </div>
+
     <section class="navbar">
         <div class="container">
             <div class="main-menu">
                 <ul>
                     <li>
-                        <a href="#">Projects</a>
+                        <a href="#project">Projects</a>
                     </li>
                     <li>
-                        <a href="#">Skills</a>
+                        <a href="#skill">Skills</a>
                     </li>
                     <li>
-                        <a href="#">Education</a>
+                        <a href="#education">Education</a>
                     </li>
                     <li>
-                        <a href="#">Travel</a>
+                        <a href="#travel">Travel</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -52,8 +63,8 @@
                 </h1>
                 <p class="intro-text">
                     I am studying computer science at the Univeristy of Michigan - Ann Arbor. 
-                    I enjoy learning new things, and I am currently learning Swift and the XCode Environment.
-                    I am also currently seeking for a 2025 Summer SWE internship!
+                    My passion for growth and fulfillment makes me enjoy trying and learning new opportunities!
+                    I am also currently seeking for a 2025 Summer SWE internship.
                 </p>
                 <p class="fun-facts-text">
                     Outside of school and coding, I enjoy playing sports such as basketball and football. I also love to travel the world, so check out my travel section to see everywhere that I have been recently!
@@ -81,9 +92,9 @@
                     <img src="images/281bank.jpg" alt="281Bank">
                 </div>
                 <div class = "card">
-                    <a href="#"><b>Sports Project</b></a>
+                    <a href="#"><b>NerdGrid</b></a>
                     <p>
-                        - something blah blah blah
+                        - work in progress, inspired by ImmaculateGrid
                     </p>
                     <p>
                         - baseball basketball football
@@ -159,6 +170,9 @@
                         University of Michigan - Ann Arbor
                     </h5>
                     <p>
+                        B.S.E, Computer Science
+                    </p>
+                    <p>
                         Expected Graduation Date: May 2026
                     </p>
                 </div>
@@ -211,6 +225,9 @@
             <h2 class="title">
                 Travel
             </h2>
+            <p>
+                Places I would love to visit: Japan, Thailand, Iceland, Australia, Norway, Los Angeles
+            </p>
             <div class="wrapper">
                 <i id="left" class="fa-solid fa-angle-left"></i>
                 <ul class="carousel">
@@ -249,6 +266,23 @@
                 </ul>
                 <i id="right" class="fa-solid fa-angle-right"></i>
             </div>
+        </div>
+    </section>
+    <!--contact me-->
+    <section class="contact">
+        <div id = contact></div>
+        <div class="contact-container">
+            <form action="https://api.web3forms.com/submit" method="POST" class="contacting">
+                <div class="contact-title">
+                    <h2>Contact Me</h2>
+                </div>
+                <p>Feel free to send me an email at <u>andypan159@gmail.com</u> or submit the form below.</p>
+                <input type="hidden" name="access_key" value="5c7b640b-e8d1-4902-a755-a6861ca2366c">
+                <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+                <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+                <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+                <button type="submit"> Submit </button>
+            </form>
         </div>
     </section>
     <script src="js/main.js"></script>
