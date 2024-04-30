@@ -2,6 +2,8 @@
 
 This repository contains the source code for my personal website, built entirely from scratch using HTML, CSS, and JavaScript. The website showcases my skills, projects, education, and more.
 
+Link: https://andypan1.github.io/
+
 # Features
 - Projects: Showcasing my favorite projects
 - Skills: Highlighting my skills and expertise
