@@ -10,7 +10,7 @@ Link: https://andypan1.github.io/
 - Education: Detailing my educational background and relevant coursework
 - Travel: Showcasing places I've been and where I plan to travel next
 - Contact: Contact form that users can complete
-- Socials: Social Media buttons on the left side of the website
+- Socials: Link to all my socials
 
 # Future Backlog
 
