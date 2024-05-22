@@ -8,7 +8,6 @@ Link: https://andypan1.github.io/
 
 - Implementing mobile compatibility
 - Update Frameworks
-- More animations and dymanic site
 
 # Acknowledgments
 
