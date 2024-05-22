@@ -552,10 +552,26 @@ img{
 
 /* Text */
 .intro-title-xxl{
-    
     font-size: 3rem;
     line-height: 1.2;
     font-weight: 600;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    max-width: 350px;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
 }
 
 .intro-text{
