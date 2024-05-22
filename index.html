@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         body{
-             background-color: #e4d5b7;
-        }
+            background-image:  
+                linear-gradient(to top, #20496d 0%, #fbfdfb 100%); 
+        }   
     </style>
 </head>
 <body>
@@ -73,209 +75,217 @@
         </div>
     </section>
     <!--Projects-->
-    <section class = "projects">
-        <div id = "project">
-        <h2 class = "title">
-            Projects
-            <p>(click to redirect to github repo)</p>
-        </h2>
-        <div class="content">
-            <div class= "project-grid">
-                <div class = "card">
-                    <a href="https://github.com/andypan1/281bank"><b>281Bank</b></a>
-                    <p>
-                        - Designed a bank wire transfer simulator with a user database and a set of instructions that include processing customer transactions and various queries to analyze said transactions
-                    </p>
-                    <p>
-                        - Utilized abstract data types of hashmaps to efficiently manage and organize customer account information and priority queues to streamline transaction flow 
-                    </p>
-                    <p>
-                        - Private Repository, fill out the form below if you are interested in taking a look!
-                    </p>
-                    <img src="images/281bank.jpg" alt="281Bank">
-                </div>
-                <div class = "card">
-                    <a href="https://github.com/andypan1/NBAGameGrid"><b>NBANerdGird</b></a>
-                    <p>
-                        - A trivia game where a random NBA game is fetched from an API and users guess which players that played in that game filled up certain statlines
-                    </p>
-                    <p>
-                        - A Flask-based backend application that uses SQLite3 to store users and keep track of individual daily streaks of correct grids
-                    </p>  
-                    <p>
-                        - Inspired by ImmaculateGrid from Baseball Reference
-                    </p>  
-                    <img src="images/nbagird.png" alt="nba">
+    <div data-aos="fade-in" data-aos-delay="250">
+        <section class = "projects">
+            <div id = "project">
+            <h2 class = "title">
+                Projects
+                <p>(click to redirect to github repo)</p>
+            </h2>
+            <div class="content">
+                <div class= "project-grid">
+                    <div class = "card">
+                        <a href="https://github.com/andypan1/281bank"><b>281Bank</b></a>
+                        <p>
+                            - Designed a bank wire transfer simulator with a user database and a set of instructions that include processing customer transactions and various queries to analyze said transactions
+                        </p>
+                        <p>
+                            - Utilized abstract data types of hashmaps to efficiently manage and organize customer account information and priority queues to streamline transaction flow 
+                        </p>
+                        <p>
+                            - Private Repository, fill out the form below if you are interested in taking a look!
+                        </p>
+                        <img src="images/281bank.jpg" alt="281Bank">
+                    </div>
+                    <div class = "card">
+                        <a href="https://github.com/andypan1/NBAGameGrid"><b>NBANerdGird</b></a>
+                        <p>
+                            - A trivia game where a random NBA game is fetched from an API and users guess which players that played in that game filled up certain statlines
+                        </p>
+                        <p>
+                            - A Flask-based backend application that uses SQLite3 to store users and keep track of individual daily streaks of correct grids
+                        </p>  
+                        <p>
+                            - Inspired by ImmaculateGrid from Baseball Reference
+                        </p>  
+                        <img src="images/nbagird.png" alt="nba">
+                    </div>
                 </div>
             </div>
-        </div>
-        </div>
-    </section>
+            </div>
+        </section>
+    </div>
     <!--Skills--> 
-    <section class="skills"> 
-        <div id="skill">
-            <h3 class="title">
-                Skills
-            </h3>
-                <div class="group">
-                    <div class="skills-header">
-                        <h4 class="text">
-                            Languages
-                        </h4>
-                    </div>
-                    <div class="group-body">
-                        <div class="grids">
-                            <div class="card1">
-                                <h4><b>C++</b></h4>
-                                <img src="images/c++.png" alt="sp">
-                            </div>
-                            <div class="card1">
-                                <h4><b>Python</b></h4>
-                                <img src="images/python.png" alt="sp">
-                            </div>
-                            <div class="card1">
-                                <h4><b>Java</b></h4>
-                                <img src="images/java.png" alt="sp">
-                            </div>
-                            <div class="card1">
-                                <h4><b>Swift</b></h4>
-                                <img src="images/swift.png" alt="sp">
+    <div data-aos="fade-in" data-aos-delay="250">
+        <section class="skills"> 
+            <div id="skill">
+                <h3 class="title">
+                    Skills
+                </h3>
+                    <div class="group">
+                        <div class="skills-header">
+                            <h4 class="text">
+                                Languages
+                            </h4>
+                        </div>
+                        <div class="group-body">
+                            <div class="grids">
+                                <div class="card1">
+                                    <h4><b>C++</b></h4>
+                                    <img src="images/c++.png" alt="sp">
+                                </div>
+                                <div class="card1">
+                                    <h4><b>Python</b></h4>
+                                    <img src="images/python.png" alt="sp">
+                                </div>
+                                <div class="card1">
+                                    <h4><b>Java</b></h4>
+                                    <img src="images/java.png" alt="sp">
+                                </div>
+                                <div class="card1">
+                                    <h4><b>Swift</b></h4>
+                                    <img src="images/swift.png" alt="sp">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="group">
-                    <div class="skills-header">
-                    <h4 class="text">
-                        Frameworks
-                    </h4>
+                    <div class="group">
+                        <div class="skills-header">
+                        <h4 class="text">
+                            Frameworks
+                        </h4>
+                        </div>
+                        <div class="group-body">
+                            <!-- <div class="grids">
+                                <div class="card1">
+                                    <h4><b>HTML</b></h4>
+                                    <img src="images/html.png" alt="">
+                                </div>
+                                <div class="card1">
+                                    <h4><b>CSS</b></h4>
+                                    <img src="images/css.png" alt="">
+                                </div>
+                            </div> -->
+                        </div>
                     </div>
-                    <div class="group-body">
-                        <!-- <div class="grids">
-                            <div class="card1">
-                                <h4><b>HTML</b></h4>
-                                <img src="images/html.png" alt="">
-                            </div>
-                            <div class="card1">
-                                <h4><b>CSS</b></h4>
-                                <img src="images/css.png" alt="">
-                            </div>
-                        </div> -->
-                    </div>
-                </div>
-        </div>
-    </section>
+            </div>
+        </section>
+    </div>
     <!--education-->
-    <section class = "education"> 
-        <div id = "education">
-            <h4 class = "title">
-                Education
-            </h4>
-            <div class="umich">
-                <img src="images/umich logo.png" alt="University of Michigan Logo">
-                <div class="details">
-                    <h5 class="title">
-                        University of Michigan - Ann Arbor
-                    </h5>
-                    <p>
-                        B.S.E, Computer Science
-                    </p>
-                    <p>
-                        Expected Graduation Date: May 2026
-                    </p>
+    <div data-aos="fade-in" data-aos-delay="250">
+        <section class = "education"> 
+            <div id = "education">
+                <h4 class = "title">
+                    Education
+                </h4>
+                <div class="umich">
+                    <img src="images/umich logo.png" alt="University of Michigan Logo">
+                    <div class="details">
+                        <h5 class="title">
+                            University of Michigan - Ann Arbor
+                        </h5>
+                        <p>
+                            B.S.E, Computer Science
+                        </p>
+                        <p>
+                            Expected Graduation Date: May 2026
+                        </p>
+                    </div>
+                </div>
+                <h6 class="relv">
+                    Relevant Coursework:
+                </h6>
+                <div class="acc">
+                    <div class="contentbx">
+                        <div class="label">EECS 203. Discrete Mathematics</div>
+                        <div class="content">Introduction to the mathematical foundations of computer science. Topics covered include: propositional and predicate logic, set theory, function and relations, growth of functions and asymptotic notation, introduction to algorithms, elementary combinatorics and graph theory and discrete probability theory.
+                        </div>
+                    </div>
+                    <div class="contentbx">
+                        <div class="label">EECS 280. Programming and Introductory Data Structures</div>
+                        <div class="content">
+                            Algorithm development and effective programming, top-down analysis, structured programming, testing and program correctness. Program language syntax and static and runtime semantics. Scope, procedure instantiation, recursion, abstract data types and parameter passing methods. Structured data types, pointers, linked data structures, stacks, queues, arrays, records and trees.
+                        </div>
+                    </div>
+                    <div class="contentbx">
+                        <div class="label">EECS 281. Data Structures and Algorithms</div>
+                        <div class="content">
+                            Introduction to algorithm analysis and O-notation; Fundamental data structures including lists, stacks, queues, priority queues, hash tables, binary trees, search trees, balanced trees and graphs; searching and sorting algorithms; recursive algorithms; basic graph algorithms; introduction to greedy algorithms and divide and conquer strategy. Several programming assignments.
+                        </div>
+                    </div>
+                    <div class="contentbx">
+                        <div class="label">EECS 370. Introduction to Computer Organization</div>
+                        <div class="content">
+                            Basic concepts of computer organization and hardware. Instructions executed by a processor and how to use these instructions in simple assembly-language programs. Stored-program concept. Datapath and control for multiple implementations of a processor. Performance evaluation, pipelining, caches, virtual memory, input/output.
+                        </div>
+                    </div>
+                    <div class="contentbx">
+                        <div class="label">EECS 376. Foundations of Computer Science</div>
+                        <div class="content">
+                            Introduction to theory of computation.  Models of computation: finite state machines, Turing machines.  Decidable and undecidable problems.  Polynomial time computability and paradigms of algorithm design.  computational complexity emphasizing NP-hardness.  Coping with intractability.  Exploiting intractability:  cryptography.
+                        </div>
+                    </div>
+                    <div class="contentbx">
+                        <div class="label">ROB 101. Computational Linear Algebra</div>
+                        <div class="content">
+                            Linear algebra and computation as a means for reasoning about data and making discoveries about the world. Topics: The Julia programming language. Systems of linear equations. Vectors, matrices, inverses. Regression. Matrix factorization. Spatial coordinates. Cameras, LiDARS, accelerometers, single-axis gyroscopes, encoders. Optimization and robot perception.
+                        </div>
+                    </div>
                 </div>
             </div>
-            <h6 class="relv">
-                Relevant Coursework:
-            </h6>
-            <div class="acc">
-                <div class="contentbx">
-                    <div class="label">EECS 203. Discrete Mathematics</div>
-                    <div class="content">Introduction to the mathematical foundations of computer science. Topics covered include: propositional and predicate logic, set theory, function and relations, growth of functions and asymptotic notation, introduction to algorithms, elementary combinatorics and graph theory and discrete probability theory.
-                    </div>
-                </div>
-                <div class="contentbx">
-                    <div class="label">EECS 280. Programming and Introductory Data Structures</div>
-                    <div class="content">
-                        Algorithm development and effective programming, top-down analysis, structured programming, testing and program correctness. Program language syntax and static and runtime semantics. Scope, procedure instantiation, recursion, abstract data types and parameter passing methods. Structured data types, pointers, linked data structures, stacks, queues, arrays, records and trees.
-                    </div>
-                </div>
-                <div class="contentbx">
-                    <div class="label">EECS 281. Data Structures and Algorithms</div>
-                    <div class="content">
-                        Introduction to algorithm analysis and O-notation; Fundamental data structures including lists, stacks, queues, priority queues, hash tables, binary trees, search trees, balanced trees and graphs; searching and sorting algorithms; recursive algorithms; basic graph algorithms; introduction to greedy algorithms and divide and conquer strategy. Several programming assignments.
-                    </div>
-                </div>
-                <div class="contentbx">
-                    <div class="label">EECS 370. Introduction to Computer Organization</div>
-                    <div class="content">
-                        Basic concepts of computer organization and hardware. Instructions executed by a processor and how to use these instructions in simple assembly-language programs. Stored-program concept. Datapath and control for multiple implementations of a processor. Performance evaluation, pipelining, caches, virtual memory, input/output.
-                    </div>
-                </div>
-                <div class="contentbx">
-                    <div class="label">EECS 376. Foundations of Computer Science</div>
-                    <div class="content">
-                        Introduction to theory of computation.  Models of computation: finite state machines, Turing machines.  Decidable and undecidable problems.  Polynomial time computability and paradigms of algorithm design.  computational complexity emphasizing NP-hardness.  Coping with intractability.  Exploiting intractability:  cryptography.
-                    </div>
-                </div>
-                <div class="contentbx">
-                    <div class="label">ROB 101. Computational Linear Algebra</div>
-                    <div class="content">
-                        Linear algebra and computation as a means for reasoning about data and making discoveries about the world. Topics: The Julia programming language. Systems of linear equations. Vectors, matrices, inverses. Regression. Matrix factorization. Spatial coordinates. Cameras, LiDARS, accelerometers, single-axis gyroscopes, encoders. Optimization and robot perception.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <!--travel-->
-    <section class="travel">
-        <div id="travel">
-            <h2 class="title">
-                Travel
-            </h2>
-            <p>
-                Places I would love to visit: Japan, Thailand, Iceland, Australia, Norway, Los Angeles
-            </p>
-            <div class="wrapper">
-                <i id="left" class="fa-solid fa-angle-left"></i>
-                <ul class="carousel">
-                    <li class="tcard">
-                        <img src="images/hawaii.jpg" alt="img">
-                        <h6>Honolulu, Hawaii</h6>
-                    </li>
-                    <li class="tcard">
-                        <img src="images/hk.jpg" alt="img">
-                        <h6>Hong Kong</h6>
-                    </li>
-                    <li class="tcard">
-                        <img src="images/shenzhen.jpg" alt="img">
-                        <h6>Shenzhen, China</h6>
-                    </li>
-                    <li class="tcard">
-                        <img src="images/fuzhou.jpg" alt="img">
-                        <h6>Fuzhou, China</h6>
-                    </li>
-                    <li class="tcard">
-                        <img src="images/sanjuan.jpg" alt="img">
-                        <h6>San Juan, Puerto Rico</h6>
-                    </li>
-                    <li class="tcard">
-                        <img src="images/myrtlebeach.JPG" alt="img">
-                        <h6>Myrtle Beach, South Carolina</h6>
-                    </li>
-                    <li class="tcard">
-                        <img src="images/chicago.jpg" alt="img">
-                        <h6>Chicago, Illnois</h6>
-                    </li>
-                    <li class="tcard">
-                        <img src="images/disneyworld.jpg" alt="img">
-                        <h6>Disney World, Florida</h6>
-                    </li>
-                </ul>
-                <i id="right" class="fa-solid fa-angle-right"></i>
+    <div data-aos="fade-in" data-aos-delay="250">
+        <section class="travel">
+            <div id="travel">
+                <h2 class="title">
+                    Travel
+                </h2>
+                <p>
+                    Places I would love to visit: Japan, Thailand, Iceland, Australia, Norway, Los Angeles
+                </p>
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <ul class="carousel">
+                        <li class="tcard">
+                            <img src="images/hawaii.jpg" alt="img">
+                            <h6>Honolulu, Hawaii</h6>
+                        </li>
+                        <li class="tcard">
+                            <img src="images/hk.jpg" alt="img">
+                            <h6>Hong Kong</h6>
+                        </li>
+                        <li class="tcard">
+                            <img src="images/shenzhen.jpg" alt="img">
+                            <h6>Shenzhen, China</h6>
+                        </li>
+                        <li class="tcard">
+                            <img src="images/fuzhou.jpg" alt="img">
+                            <h6>Fuzhou, China</h6>
+                        </li>
+                        <li class="tcard">
+                            <img src="images/sanjuan.jpg" alt="img">
+                            <h6>San Juan, Puerto Rico</h6>
+                        </li>
+                        <li class="tcard">
+                            <img src="images/myrtlebeach.JPG" alt="img">
+                            <h6>Myrtle Beach, South Carolina</h6>
+                        </li>
+                        <li class="tcard">
+                            <img src="images/chicago.jpg" alt="img">
+                            <h6>Chicago, Illnois</h6>
+                        </li>
+                        <li class="tcard">
+                            <img src="images/disneyworld.jpg" alt="img">
+                            <h6>Disney World, Florida</h6>
+                        </li>
+                    </ul>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <!--contact me-->
     <section class="contact">
         <div id = contact></div>
@@ -293,6 +303,11 @@
             </form>
         </div>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/main.js"></script>
+    </script>
 </body>
 </html>

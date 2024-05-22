@@ -30,7 +30,7 @@ img{
 
 /* Hero */
 .hero{
-    padding: 80px 0 10px;
+    padding: 230px 0 250px;
 }
 .hero .contain{
     display: flex;
@@ -93,7 +93,7 @@ img{
     font-size: 1.25rem;
 }
 .projects a:hover{
-    color: #deb887;
+    color: #4B9CD3;
     transition: 0.5s;
 }
 
@@ -286,10 +286,11 @@ img{
     display: flex;
     justify-content: center;
     padding-top: 45px;
-    background-color: #8FBC8B;
+    background-color: #e4d5b7;
     width: 1150px;
     border-radius: 25px;
     padding-bottom: 50px;
+    margin-bottom: 50px;
 }
 
 .travel .title {
@@ -406,9 +407,10 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #967969;
+    background: black;
     color: white;
     text-align: center;
+    margin-top: 220px; /* Adjust this value as needed */
 }
 
 .contacting{
@@ -449,7 +451,7 @@ img{
 }
 
 .contact-inputs:focus{
-    border: 4px solid #deb887;
+    border: 4px solid #4B9CD3;
 }
 
 .contact-inputs::placeholder{
@@ -464,7 +466,7 @@ img{
     color: white;
     border: none;
     border-radius: 15px;
-    background: #deb887;
+    background: #4B9CD3;
     cursor: pointer;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
@@ -535,7 +537,7 @@ img{
 }
 
 .navbar ul li a:hover{
-    color: #deb887
+    color: #4B9CD3
 }
 
 .navbar{
@@ -552,13 +554,13 @@ img{
 
 /* Text */
 .intro-title-xxl{
-    font-size: 3rem;
+    font-size: 4rem;
     line-height: 1.2;
     font-weight: 600;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
     border-right: .15em solid orange; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
-    max-width: 350px;
+    max-width: 470px;
     animation: 
       typing 3.5s steps(40, end),
       blink-caret .75s step-end infinite;
@@ -575,16 +577,15 @@ img{
 }
 
 .intro-text{
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
-    font-weight: 300;
+    font-weight: 400;
     margin: 20px 0 30px;
 
 }
 
 .fun-facts-text{
-   
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
     font-weight: 300;
 }
