@@ -6,8 +6,7 @@ Link: https://andypan1.github.io/
 
 # Future Backlog
 
-- Implementing mobile compatibility
-- Update Frameworks
+- Fix mobile compatibility
 
 # Acknowledgments
 
