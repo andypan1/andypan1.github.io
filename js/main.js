@@ -1,12 +1,3 @@
-//skills
-document.addEventListener('DOMContentLoaded', () => {
-    const content = document.querySelectorAll('.group');
-        content.forEach(c => {
-            c.addEventListener("click", () => {
-                c.classList.toggle("active");
-            });
-        });
-});
 //education
 const acc = document.getElementsByClassName('contentbx');
 for(i = 0; i < acc.length; i++){
@@ -14,6 +5,7 @@ for(i = 0; i < acc.length; i++){
         this.classList.toggle("active")
     });
 };
+
 //travel
 const travel = document.querySelector('.carousel')
 const arrowbts = document.querySelectorAll(".wrapper i");
@@ -26,19 +18,34 @@ arrowbts.forEach(btn => {
     });
 });
 
+//projects
+const navLinks = document.querySelectorAll('.slider-nav a');
+const slider = document.querySelector('.slider');
+
+navLinks.forEach((link, index) => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault();
+        const slideWidth = slider.offsetWidth;
+        slider.scrollTo({
+            left: slideWidth * index,
+            behavior: 'smooth',
+        });
+        navLinks.forEach(nav => nav.classList.remove('active'));
+        link.classList.add('active');
+    });
+});
+
 //navbar
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+document.querySelectorAll('.navbar-type a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
-        const offset = 150; // Adjust this value as needed
-
         const target = document.querySelector(this.getAttribute('href'));
-        const targetTop = target.getBoundingClientRect().top + window.pageYOffset;
+        const offset = document.querySelector('.navbar').offsetHeight;
+        const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
         window.scrollTo({
-            top: targetTop - offset,
+            top: targetPosition,
             behavior: 'smooth'
         });
     });
 });
-

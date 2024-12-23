@@ -4,250 +4,212 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andy Pan</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-        body{
-            background-image:  
-                linear-gradient(to top, #20496d 0%, #fbfdfb 100%); 
-        }   
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
 </head>
-<body>
-    <div class="social-buttons">
-        <a href="https://www.instagram.com/1xndy/" class="instagram"> <img src="images/insta.jpg" alt="Instagram"></a>
-        <a href="https://www.linkedin.com/in/andy-pan-/" class="linkedin"><img src="images/link.png" alt="LinkedIn"></a>
-        <a href="https://github.com/andypan1" class="github"><img src="images/github.png" alt="GitHub"></a>
-        <a href="https://drive.google.com/file/d/1JlmhpKSnwrKzD5E-09zEpI0ZKZ_UJkdg/view?usp=sharing" class="drive"><img src="images/resume.png" alt="Resume"></a>
-    </div>
     <section class="navbar">
-        <div class="container">
-            <div class="main-menu">
-                <ul>
-                    <li>
-                        <a href="#project">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#skill">Skills</a>
-                    </li>
-                    <li>
-                        <a href="#education">Education</a>
-                    </li>
-                    <li>
-                        <a href="#travel">Travel</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                </ul>
+        <ul id="main-menu">
+            <div class="navbar-type">
+                <a href="#exp">Experience</a>
             </div>
+            <div class="navbar-type">
+                <a href="#edu">Education</a>
+            </div>
+            <div class="navbar-type">
+                <a href="#proj">Projects</a>
+            </div>
+            <div class="navbar-type">
+                <a href="#trav">Travel</a>
+            </div>
+            <div class="navbar-type">
+                <a href="#contact">Contact</a>
+            </div>
+        </ul>
+    </section>
+    <section class="bio">
+        <img src="images/logo.png" alt="" class="headshot">
+        <h1 class="name">Hey! My name is Andy.</h1>
+        <div class="text-content">
+            <p class="bio-paragraph">
+                I'm currently a junior studying Computer Science at the University of Michigan.
+                This summer, I will be working at GEICO as a Software Development Engineering Intern.
+                When I am not busy studying or coding, I love to play basketball or travel the world!
+            </p>
+        </div>
+        <div class="social-buttons">
+            <a href="https://www.instagram.com/1xndy/" class="instagram"> <img src="images/insta.jpg" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/in/andy-pan-/" class="linkedin"><img src="images/link.png" alt="LinkedIn"></a>
+            <a href="https://github.com/andypan1" class="github"><img src="images/github.png" alt="GitHub"></a>
+            <a href="https://drive.google.com/file/d/1JlmhpKSnwrKzD5E-09zEpI0ZKZ_UJkdg/view?usp=sharing" class="drive"><img src="images/resume.png" alt="Resume"></a>
         </div>
     </section>
-    <!-- Hero -->
-    <section class = "hero">
-        <div class="contain">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo.png" alt="logo">
-                </a>
-            </div>
-            <div class="content">
-                <h1 class="intro-title-xxl">
-                    Hey! I'm Andy.
-                </h1>
-                <p class="intro-text">
-                    I am studying computer science at the Univeristy of Michigan - Ann Arbor. 
-                    My passion for growth and fulfillment makes me enjoy trying and learning new opportunities!
-                    I am also currently seeking for a 2025 Summer SWE internship.
-                </p>
-                <p class="fun-facts-text">
-                    Outside of school and coding, I enjoy playing sports such as basketball and football. I also love to travel the world, so check out my travel section to see everywhere that I have been recently!
-                </p>
-            </div>
-        </div>
-    </section>
-    <!--Projects-->
-    <div data-aos="fade-in" data-aos-delay="250">
-        <section class = "projects">
-            <div id = "project">
-            <h2 class = "title">
-                Projects
-                <p>(click to redirect to github repo)</p>
-            </h2>
-            <div class="content">
-                <div class= "project-grid">
-                    <div class = "card">
-                        <a href="https://github.com/andypan1/281bank"><b>281Bank</b></a>
-                        <p>
-                            - Designed a bank wire transfer simulator with a user database and a set of instructions that include processing customer transactions and various queries to analyze said transactions
-                        </p>
-                        <p>
-                            - Utilized abstract data types of hashmaps to efficiently manage and organize customer account information and priority queues to streamline transaction flow 
-                        </p>
-                        <p>
-                            - Private Repository, fill out the form below if you are interested in taking a look!
-                        </p>
-                        <img src="images/281bank.jpg" alt="281Bank">
-                    </div>
-                    <div class = "card">
-                        <a href="https://github.com/andypan1/NBAGameGrid"><b>NBAGameGird</b></a>
-                        <p>
-                            - A trivia game where a random NBA game is fetched from an API and users guess which players that played in that game filled up certain statlines
-                        </p>
-                        <p>
-                            - A Flask-based backend application that uses SQLite3 to store users and keep track of individual daily streaks of correct grids
-                        </p>  
-                        <p>
-                            - Inspired by ImmaculateGrid from Baseball Reference
-                        </p>  
-                        <img src="images/nbagird.png" alt="nba">
-                    </div>
-                </div>
-            </div>
-            </div>
-        </section>
-    </div>
-    <!--Skills--> 
-    <div data-aos="fade-in" data-aos-delay="250">
-        <section class="skills"> 
-            <div id="skill">
-                <h3 class="title">
-                    Skills
-                </h3>
-                    <div class="group">
-                        <div class="skills-header">
-                            <h4 class="text">
-                                Languages
-                            </h4>
+    <div data-aos="fade-in" data-aos-delay="200">
+        <section class ="experience">
+            <div id ="exp"></div>
+            <h1 class="title"><u>Experience</u></h1>
+                <div class="timeline">
+                    <div data-aos="fade-left" data-aos-delay="200">
+                        <div class="container left">
+                            <div class="content">
+                                <img src="images/geico.jpeg" alt="" class="logo">
+                                <h2>Incoming SDE Intern @ GEICO</h2>
+                                <p>December 2024 - Present</p>
+                            </div>
                         </div>
-                        <div class="group-body">
-                            <div class="grids">
-                                <div class="card1">
-                                    <h4><b>C++</b></h4>
-                                    <img src="images/c++.png" alt="sp">
-                                </div>
-                                <div class="card1">
-                                    <h4><b>Python</b></h4>
-                                    <img src="images/python.png" alt="sp">
-                                </div>
-                                <div class="card1">
-                                    <h4><b>Java</b></h4>
-                                    <img src="images/java.png" alt="sp">
-                                </div>
-                                <div class="card1">
-                                    <h4><b>JavaScript</b></h4>
-                                    <img src="images/js.png" alt="sp">
+                    </div>
+                    <div data-aos="fade-right" data-aos-delay="200">
+                        <div class="container right">
+                            <div data-aos="fade-right" data-aos-delay="200">
+                                <div class="content">
+                                    <img src="images/subway.png" alt="" class="logo">
+                                    <h2>Sandwich Artist @ Subway</h2>
+                                    <p>September 2024 - Present</p>
+                                    <p>My rent and bills have to be paid somehow...</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="group">
-                        <div class="skills-header">
-                        <h4 class="text">
-                            Frameworks
-                        </h4>
-                        </div>
-                        <div class="group-body">
-                            <div class="grids">
-                                <div class="card1">
-                                    <h4><b>Flask</b></h4>
-                                    <img src="images/flask.jpg" alt="sp">
-                                </div>
-                                <div class="card1">
-                                    <h4><b>React</b></h4>
-                                    <img src="images/react.png" alt="sp">
-                                </div>
-                                <div class="card1">
-                                    <h4><b>Node.js</b></h4>
-                                    <img src="images/node.png" alt="sp">
-                                </div>
-                                <div class="card1">
-                                    <h4><b>AWS</b></h4>
-                                    <img src="images/aws.jpg" alt="sp">
-                                </div>
+                    <div data-aos="fade-left" data-aos-delay="200">
+                        <div class="container left">
+                            <div class="content">
+                                <img src="images/fitnescity.jpg" alt="" class="logo">
+                                <h2>Operations Intern @ Fitnescity</h2>
+                                <p>July 2024 - August 2024</p>
                             </div>
                         </div>
                     </div>
+                </div>
             </div>
         </section>
-    </div>
-    <!--education-->
-    <div data-aos="fade-in" data-aos-delay="250">
-        <section class = "education"> 
-            <div id = "education">
-                <h4 class = "title">
-                    Education
-                </h4>
-                <div class="umich">
-                    <img src="images/umich logo.png" alt="University of Michigan Logo">
-                    <div class="details">
-                        <h5 class="title">
-                            University of Michigan - Ann Arbor
-                        </h5>
-                        <p>
-                            B.S.E, Computer Science
-                        </p>
-                        <p>
-                            Expected Graduation Date: May 2026
-                        </p>
-                    </div>
+    </div>  
+    <section class = "education"> 
+        <div id="edu"></div>
+        <div data-aos="fade-in" data-aos-delay="250">
+            <h1 class = "title">
+                <u>Education</u>
+            </h4>
+            <div class="umich">
+                <img src="images/umich logo.png" alt="University of Michigan Logo">
+                <div class="details">
+                    <h5 class="title">
+                        University of Michigan - Ann Arbor
+                    </h5>
+                    <p>
+                        B.S.E, Computer Science
+                    <p>
+                        Expected Graduation Date: May 2026
+                    </p>
                 </div>
-                <h6 class="relv">
-                    Relevant Coursework:
-                </h6>
-                <div class="acc">
+            </div>
+            <h6 class="relv">
+                <u>Relevant Coursework:</u>
+            </h6>
+            <div class="acc">
+                <div data-aos="fade-right" data-aos-delay="200">
                     <div class="contentbx">
                         <div class="label">EECS 203. Discrete Mathematics</div>
-                        <div class="content">Introduction to the mathematical foundations of computer science. Topics covered include: propositional and predicate logic, set theory, function and relations, growth of functions and asymptotic notation, introduction to algorithms, elementary combinatorics and graph theory and discrete probability theory.
+                        <div class="econtent">Introduction to the mathematical foundations of computer science. Topics covered include: propositional and predicate logic, set theory, function and relations, growth of functions and asymptotic notation, introduction to algorithms, elementary combinatorics and graph theory and discrete probability theory.
                         </div>
                     </div>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="200">
                     <div class="contentbx">
                         <div class="label">EECS 280. Programming and Introductory Data Structures</div>
-                        <div class="content">
+                        <div class="econtent">
                             Algorithm development and effective programming, top-down analysis, structured programming, testing and program correctness. Program language syntax and static and runtime semantics. Scope, procedure instantiation, recursion, abstract data types and parameter passing methods. Structured data types, pointers, linked data structures, stacks, queues, arrays, records and trees.
                         </div>
                     </div>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="200">
                     <div class="contentbx">
                         <div class="label">EECS 281. Data Structures and Algorithms</div>
-                        <div class="content">
+                        <div class="econtent">
                             Introduction to algorithm analysis and O-notation; Fundamental data structures including lists, stacks, queues, priority queues, hash tables, binary trees, search trees, balanced trees and graphs; searching and sorting algorithms; recursive algorithms; basic graph algorithms; introduction to greedy algorithms and divide and conquer strategy. Several programming assignments.
                         </div>
                     </div>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="200">
                     <div class="contentbx">
                         <div class="label">EECS 370. Introduction to Computer Organization</div>
-                        <div class="content">
+                        <div class="econtent">
                             Basic concepts of computer organization and hardware. Instructions executed by a processor and how to use these instructions in simple assembly-language programs. Stored-program concept. Datapath and control for multiple implementations of a processor. Performance evaluation, pipelining, caches, virtual memory, input/output.
                         </div>
                     </div>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="200">
                     <div class="contentbx">
                         <div class="label">EECS 376. Foundations of Computer Science</div>
-                        <div class="content">
+                        <div class="econtent">
                             Introduction to theory of computation.  Models of computation: finite state machines, Turing machines.  Decidable and undecidable problems.  Polynomial time computability and paradigms of algorithm design.  computational complexity emphasizing NP-hardness.  Coping with intractability.  Exploiting intractability:  cryptography.
                         </div>
                     </div>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="200">
+                    <div class="contentbx">
+                        <div class="label">EECS 484. Database Management Systems</div>
+                        <div class="econtent">
+                            Concepts and methods for the design, creation, query and management of large enterprise databases. Functions and characteristics of the leading database management systems. Query languages such as SQL, forms, embedded SQL, and application development tools. Database design, integrity, normalization, access methods, query optimization, transaction management and concurrency control and recovery.
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="200">
+                    <div class="contentbx">
+                        <div class="label">EECS 485. Web Systems</div>
+                        <div class="econtent">
+                            Concepts surrounding web systems, applications, and internet scale distributed systems. Topics covered include client/server protocols, security, information retrieval and search engines, scalable data processing, and fault tolerant systems. The course has substantial projects involving development of web applications and web systems.
+                        </div>
+                    </div>
+                </div>
+                <div data-aos="fade-right" data-aos-delay="200">
                     <div class="contentbx">
                         <div class="label">ROB 101. Computational Linear Algebra</div>
-                        <div class="content">
+                        <div class="econtent">
                             Linear algebra and computation as a means for reasoning about data and making discoveries about the world. Topics: The Julia programming language. Systems of linear equations. Vectors, matrices, inverses. Regression. Matrix factorization. Spatial coordinates. Cameras, LiDARS, accelerometers, single-axis gyroscopes, encoders. Optimization and robot perception.
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
-    <!--travel-->
-    <div data-aos="fade-in" data-aos-delay="250">
-        <section class="travel">
+        </div>
+    </section>
+    <div id ="proj"></div>
+    <section class="projects">
+        <div data-aos="fade-in" data-aos-delay="250">
+            <h1 class="title">
+                <u>Projects</u>
+            </h1>
+            <div class="slider-wrapper">
+                <div class="slider">
+                    <figure>
+                        <img id="slide-1" src="images/temp-sports.jpg" alt="sportsBNB">
+                        <figcaption><a href="https://github.com/cesarfranc0/SportsBNB"><b>SportsBNB</b>, like AirBNB, but for sports facilities.</a></figcaption>
+                    </figure>
+                    <figure>
+                        <img id="slide-2" src="images/ask485.png" alt="ask485">
+                        <figcaption>Building a scalable search engine.</figcaption>
+                    </figure>
+                    <figure>
+                        <img id="slide-3" src="images/portfolio.png" alt="portfolio">
+                        <figcaption>I wonder what this can be... (Portfolio Website!)</figcaption>
+                    </figure>
+                </div>
+                <div class="slider-nav">
+                    <a href="#slide-1"></a>
+                    <a href="#slide-2"></a>
+                    <a href="#slide-3"></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="travel">
+        <div id ="trav"></div>
+        <div data-aos="fade-in" data-aos-delay="250">
             <div id="travel">
-                <h2 class="title">
-                    Travel
-                </h2>
+                <h1 class="title">
+                    <u>Travel</u>
+                </h1>
                 <p>
                     Places I would love to visit: Japan, Thailand, Iceland, Australia, Norway, Los Angeles
                 </p>
@@ -275,6 +237,10 @@
                             <h6>Honolulu, Hawaii</h6>
                         </li>
                         <li class="tcard">
+                            <img src="images/cancun.jpg" alt="img">
+                            <h6>Cancun, Mexico</h6>
+                        </li>
+                        <li class="tcard">
                             <img src="images/hk.jpg" alt="img">
                             <h6>Hong Kong</h6>
                         </li>
@@ -298,19 +264,15 @@
                             <img src="images/chicago.jpg" alt="img">
                             <h6>Chicago, Illinois</h6>
                         </li>
-                        <li class="tcard">
-                            <img src="images/disneyworld.jpg" alt="img">
-                            <h6>Disney World, Florida</h6>
-                        </li>
                     </ul>
                     <i id="right" class="fa-solid fa-angle-right"></i>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
     <!--contact me-->
     <section class="contact">
-        <div id = contact></div>
+        <div id = "contact"></div>
         <div class="contact-container">
             <form action="https://api.web3forms.com/submit" method="POST" class="contacting">
                 <div class="contact-title">
@@ -325,11 +287,10 @@
             </form>
         </div>
     </section>
+    <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script>
-    <script src="js/main.js"></script>
     </script>
 </body>
 </html>
